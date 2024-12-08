@@ -150,7 +150,8 @@ Dalam proyek ini, saya menggunakan **metrik evaluasi klasifikasi** untuk menilai
    - **Accuracy**: 84.3%  
    - **ROC-AUC Score**: 0.957  
    - Berdasarkan precision, recall, dan F1-score:
-   ![alt text](image-6.png)
+
+     ![alt text](image-6.png)
      - Kelas 0 memiliki performa sangat baik dengan precision 0.93 dan recall 0.96, menunjukkan model mampu memprediksi kelas ini secara akurat.
      - Kelas 1 dan 2 memiliki precision dan recall lebih rendah (rata-rata di atas 0.75), menandakan model memiliki sedikit kesulitan membedakan kedua kelas ini.
    - **Kesimpulan**: Logistic Regression memberikan hasil yang realistis dan menunjukkan generalisasi yang baik untuk semua kelas.
@@ -159,7 +160,8 @@ Dalam proyek ini, saya menggunakan **metrik evaluasi klasifikasi** untuk menilai
    - **Accuracy**: 100%  
    - **ROC-AUC Score**: 1.0  
    - Berdasarkan precision, recall, dan F1-score:
-   ![alt text](image-7.png)
+
+     ![alt text](image-7.png)
      - Kedua model memprediksi semua kelas dengan sempurna (nilai precision, recall, dan F1-score semuanya 1.0). Namun, performa sempurna ini menimbulkan potensi **overfitting**, terutama karena hasil ini berasal dari data uji.
 
 ---
