@@ -38,12 +38,12 @@ Dataset yang digunakan dalam proyek ini adalah Student Lifestyle Dataset, yang d
 **Exploratory Data Analysis**:
 - Univariate analysis: untuk melihat distribusi data fitur target.
 
-  ![Stress level](https://github.com/sayyidfaruk/Machine-learning/blob/main/image.png)
+  ![Stress level](https://raw.githubusercontent.com/sayyidfaruk/Machine-learning/refs/heads/main/image.png)
 
   Dari sini bisa dilihat bahwa dataset ini imbalance.
 - Multivariate analysis: untuk melihat hubungan antar setiap variable.
   
-  ![korelasi](https://github.com/sayyidfaruk/Machine-learning/blob/main/image-1.png)
+  ![korelasi](https://raw.githubusercontent.com/sayyidfaruk/Machine-learning/refs/heads/main/image-1.png)
 
   Dari analisis korelasi ini, kita dapat menyimpulkan bahwa waktu belajar per hari (Study_Hours_Per_Day) adalah faktor gaya hidup yang paling berpengaruh terhadap tingkat stres mahasiswa, diikuti oleh prestasi akademik (GPA). Selain itu, tidur juga memiliki dampak yang moderat terhadap tingkat stres.
 
@@ -111,39 +111,35 @@ Berdasarkan evaluasi, **Logistic Regression** dipilih sebagai model terbaik deng
 ## Evaluation
 Dalam proyek ini, saya menggunakan **metrik evaluasi klasifikasi** untuk menilai performa model dalam memprediksi data. Berikut adalah metrik-metrik evaluasi yang digunakan beserta hasilnya:
 
----
-
 #### **Metrik Evaluasi**
 1. **Accuracy**:
    - Mengukur proporsi prediksi yang benar dari total prediksi yang dibuat.
    - Formula:  
-     ![alt text](https://github.com/sayyidfaruk/Machine-learning/blob/main/image-2.png)
+     ![alt text](https://raw.githubusercontent.com/sayyidfaruk/Machine-learning/refs/heads/main/image-2.png)
    - Kelebihan: Mudah diinterpretasikan.  
    - Kekurangan: Tidak cocok untuk dataset dengan distribusi kelas yang tidak seimbang.
 
 2. **Precision**:
    - Mengukur proporsi prediksi positif yang benar dari total prediksi positif.  
    - Formula (untuk setiap kelas):  
-     ![alt text](https://github.com/sayyidfaruk/Machine-learning/blob/main/image-3.png)
+     ![alt text](https://raw.githubusercontent.com/sayyidfaruk/Machine-learning/refs/heads/main/image-3.png)
    - Relevan untuk menghindari terlalu banyak kesalahan positif.
 
 3. **Recall**:
    - Mengukur kemampuan model mendeteksi semua instance positif.  
    - Formula (untuk setiap kelas):  
-     ![alt text](https://github.com/sayyidfaruk/Machine-learning/blob/main/image-4.png)
+     ![alt text](https://raw.githubusercontent.com/sayyidfaruk/Machine-learning/refs/heads/main/image-4.png)
    - Relevan ketika penting untuk mendeteksi semua instance suatu kelas (misalnya deteksi penyakit).
 
 4. **F1-Score**:
    - Merupakan rata-rata harmonis antara precision dan recall, memberikan keseimbangan antara keduanya.  
    - Formula:  
-     ![alt text](https://github.com/sayyidfaruk/Machine-learning/blob/main/image-5.png)
+     ![alt text](https://raw.githubusercontent.com/sayyidfaruk/Machine-learning/refs/heads/main/image-5.png)
    - Berguna untuk data dengan distribusi kelas yang tidak seimbang.
 
 5. **ROC-AUC Score**:
    - Mengukur kemampuan model dalam membedakan antara kelas positif dan negatif melalui kurva ROC (Receiver Operating Characteristic).  
    - Nilai AUC mendekati 1 menunjukkan kemampuan klasifikasi yang sangat baik.
-
----
 
 #### **Hasil Evaluasi**
 1. **Logistic Regression**:
@@ -151,7 +147,7 @@ Dalam proyek ini, saya menggunakan **metrik evaluasi klasifikasi** untuk menilai
    - **ROC-AUC Score**: 0.957  
    - Berdasarkan precision, recall, dan F1-score:
 
-     ![alt text](https://github.com/sayyidfaruk/Machine-learning/blob/main/image-6.png)
+     ![alt text](https://raw.githubusercontent.com/sayyidfaruk/Machine-learning/refs/heads/main/image-6.png)
      - Kelas 0 memiliki performa sangat baik dengan precision 0.93 dan recall 0.96, menunjukkan model mampu memprediksi kelas ini secara akurat.
      - Kelas 1 dan 2 memiliki precision dan recall lebih rendah (rata-rata di atas 0.75), menandakan model memiliki sedikit kesulitan membedakan kedua kelas ini.
    - **Kesimpulan**: Logistic Regression memberikan hasil yang realistis dan menunjukkan generalisasi yang baik untuk semua kelas.
@@ -161,7 +157,7 @@ Dalam proyek ini, saya menggunakan **metrik evaluasi klasifikasi** untuk menilai
    - **ROC-AUC Score**: 1.0  
    - Berdasarkan precision, recall, dan F1-score:
 
-     ![alt text](https://github.com/sayyidfaruk/Machine-learning/blob/main/image-7.png)
+     ![alt text](https://raw.githubusercontent.com/sayyidfaruk/Machine-learning/refs/heads/main/image-7.png)
      - Kedua model memprediksi semua kelas dengan sempurna (nilai precision, recall, dan F1-score semuanya 1.0). Namun, performa sempurna ini menimbulkan potensi **overfitting**, terutama karena hasil ini berasal dari data uji.
 
 ---
